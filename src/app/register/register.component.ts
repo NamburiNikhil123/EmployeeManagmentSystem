@@ -42,7 +42,10 @@ export class RegisterComponent implements OnInit {
   }
 
   register() {
-    alert("Employee Registration Success");
     console.log(this.employee);
+
+    this.service.registerEmployee(this.employee).subscribe((data: any) =>{
+        console.log(data);
+    });
   }
 }

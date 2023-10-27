@@ -7,6 +7,7 @@ import { ShowEmpByIdComponent } from './show-emp-by-id/show-emp-by-id.component'
 import { LogoutComponent } from './logout/logout.component';
 import { authGuard } from './auth.guard';
 import { ProductsComponent } from './products/products.component';
+import { CartComponent } from './cart/cart.component';
 
 const routes: Routes = [
   {path:"",            component:LoginComponent},
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path:"showemps",    canActivate:[authGuard]   ,component:ShowemployeesComponent},
   {path:"showempbyid", canActivate:[authGuard]   ,component:ShowEmpByIdComponent},
   {path:"products",    canActivate:[authGuard]   ,component:ProductsComponent},
-  {path:"logout",      canActivate:[authGuard]   ,component:LogoutComponent}
+  {path:"logout",      canActivate:[authGuard]   ,component:LogoutComponent},
+  {path:"cart",        canActivate:[authGuard]   ,component: CartComponent }
 ];
 
 @NgModule({

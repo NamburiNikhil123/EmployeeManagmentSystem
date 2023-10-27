@@ -17,6 +17,7 @@ import { LogoutComponent } from './logout/logout.component';
 import { RouterModule } from '@angular/router';
 import { ProductsComponent } from './products/products.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { HttpClientModule } from '@angular/common/http';
     GenderPipe,
     HeaderComponent,
     LogoutComponent,
-    ProductsComponent
+    ProductsComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
